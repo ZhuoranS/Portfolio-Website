@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Andrew Su's Portfolio Website</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="header&footer.css">
+  
+</head>
+<body>
+<nav class="navbar">
+   <ul>
+      <li><a href="index.html">Zhuoran(Andrew) Su</a></li>
+      <li><a href="projects.html">More Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li>More
+         <ul class="dropdown-menu">
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="class.html">CS 330?</a></li>
+            <li><a href="https://github.com/ZhuoranS" target="_blank">Github</a></li>
+         </ul>
+      </li>
+   </ul>
+</nav>
+<main>
+   <h1>Welcome! I am Zhuoran Su but feel free to call me Andrew!</h1>
+   <div class="slide-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="slide">
+         <img class="project-image" src="src\cropped_delos.png">
+         <div class="slide-text">DELOS: Model Serving in Deep Learnings</div>
+      </div>
+
+      <div class="slide">
+         <img class="project-image" src="src\scope_cropped.png">
+         <div class="slide-text">ScopeNU Student Startup</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlide(1)">&#10095;</a>
+   </div>
+   <br>
+   <div style="text-align:center">
+      <span class="dot" onclick="toSlide(1)"></span>
+      <span class="dot" onclick="toSlide(2)"></span>
+   </div>
+  
+</main>
+<footer>
+   <div class="footer1">
+      <ul>
+         <li>
+            <a class="social-media" href="https://www.linkedin.com/in/zrsu/"  target="_blank" aria-label="LinkedIn Link">
+               <img alt="LinkedIn" src="https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_100,h_100,al_c,q_85,usm_0.66_1.00_0.01/7528824071724d12a3e6c31eee0b40d4.webp" style="width: 35px; height: 35px;">
+            </a>
+         </li>
+         <li>
+            <a class="social-media" href="https://www.instagram.com/zr_su0403/"  target="_blank" aria-label="Instagram Link">
+               <img id="ins" alt="Instagram" src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_100,h_100,al_c,q_85,usm_0.66_1.00_0.01/81af6121f84c41a5b4391d7d37fce12a.webp" style="height: 35px; width: 35px;">
+            </a>
+         </li>
+      </ul>
+   </div>
+   <div class="footer2">
+         <p id="copyright"><b>2020 All rights reserved.</b></p>
+   </div>
+</footer>
+</body>
+<script src="index.js"></script>
+</html>

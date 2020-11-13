@@ -1,0 +1,136 @@
+h1, h2, h3, h4, a, p, span, content{
+    font-family: sans-serif;
+ }
+
+ .navbar {
+    background-color: purple;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    padding-left: 4em;
+ }
+
+ main{
+    margin-top: 100px;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 4em;
+    overflow: auto;
+ }
+ nav.navbar ul {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    list-style: none;
+    padding: 0;
+ }
+
+ nav.navbar li{
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    margin: 5px;
+    display: inline-block;
+    padding: 10px;
+    user-select: none;
+   
+ }
+
+ nav.navbar li a {
+   font-family: sans-serif;
+   text-decoration: none;
+   font-weight: bold;
+   color: white;
+   padding:10px;
+   border-radius: 10px;
+ }
+ 
+ nav a.active-nav{
+   background-color: rgb(197, 1, 197);
+ }
+
+ nav.navbar a:hover{
+   background-color: rgb(197, 1, 197);
+ }
+
+ nav.navbar a:active{
+   background-color: rgb(197, 1, 197);
+}
+
+nav.navbar a:active{
+   color: grey;
+}
+
+.navbar .dropdown-menu{
+   display: none;
+   position: absolute;
+   background-color:purple;
+   border: 1px white;
+   border-radius: 4px;
+   top: 25px;
+   left: 5px;
+   width: 170px;
+}
+
+.navbar .dropdown-menu li{
+   display: block;
+   padding: 10px;
+}
+
+
+.navbar .dropdown-menu li a{
+   font-family: sans-serif;
+   text-decoration: none;
+   font-weight: bold;
+   color: white;
+ }
+
+
+ .navbar li:hover .dropdown-menu{
+   display: block;
+   border-color: white;
+   border-width: 1px;
+}
+
+footer {
+   background-color: black;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   box-shadow: 0 -4px rgba(0, 0, 0, 0.3);
+   padding-left: 4em;
+   padding-right: 4em;
+   display: inline;
+}
+
+footer ul{
+   margin: 10px;
+   padding: 0;
+   list-style: none;
+   display: inline-block;
+   align-items: center;
+}
+
+footer ul li{
+   display: inline-block;
+}
+
+footer .footer1{
+   float: left;
+   display: inline-flex;
+}
+
+footer .footer2{
+   float:right;
+   font-family: sans-serif;
+   color: white;
+   display: inline-flex;
+}
+
+.social-media{
+   display: inline-block;
+}

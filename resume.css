@@ -1,0 +1,36 @@
+.transcript-bar{
+    height:50px;
+    padding: 7px;
+    border-radius: 15px;
+    background-color: grey;
+}
+
+.transcript-button {
+    width: 100px;
+    padding: 15px;
+    height: 20px;
+    border-radius: 10px;
+    background-color:  purple;
+    text-align: center;
+    float: left;
+}
+
+.transcript-button:hover {
+    background-color: black;
+}
+#transcript-link{
+    text-decoration: none;
+    color: white;
+}
+
+.resume-frame{
+    width:100%;
+    height:550px;
+}
+
+
+.transcript-selection{
+    float:left;
+    margin: 15px 1%;
+    color:white;
+}

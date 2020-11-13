@@ -1,0 +1,33 @@
+.project-container{
+   margin: 15px 15px 15px 0;
+   border-radius: 15px;
+   background-color: rgba(128, 0, 128, 0.068);
+   padding: 15px 35px 35px 35px;
+   
+}
+
+
+.project-list li{
+   font-family: sans-serif;
+}
+
+.project-link-wrapper{
+   list-style-type: none;
+}
+
+.project-link{
+   text-decoration: none;
+   background-color: white;
+   float: right;
+   padding: 10px 50px 10px 50px;
+   border-radius: 10px;
+}
+
+.project-link:hover{
+   background-color: grey;
+   color: white;
+}
+
+.date {
+   font-style: italic;
+}

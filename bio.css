@@ -1,0 +1,13 @@
+.link{
+    padding: 3px;
+    color: black;
+}
+.link:hover{
+    background-color: purple;
+    border-radius: 5px;
+    color:white;
+}
+
+#go-cats{
+    color: purple;
+}
