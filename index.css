@@ -80,11 +80,24 @@ h1, h2{
     text-align: center;
   }
   
+  .slide-text:hover{
+    background-color: rgb(160, 5, 160);
+    color: #bbb;
+ 
+  }
+  a{
+    text-decoration: none;
+  }
 
-  
+  a:hover{
+    text-decoration: none;
+  }
+
   a:hover + .hover-text{
     display: block;
   }
+
+
   /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
