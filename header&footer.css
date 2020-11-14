@@ -1,5 +1,5 @@
-h1, h2, h3, h4, a, p, span, content{
-    font-family: sans-serif;
+h1, h2, h3, h4, a, p, span, content, label{
+    font-family: Roboto;
  }
 
  .navbar {
@@ -73,6 +73,7 @@ nav.navbar a:active{
    top: 25px;
    left: 5px;
    width: 170px;
+   z-index: 1;
 }
 
 .navbar .dropdown-menu li{

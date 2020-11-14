@@ -4,8 +4,8 @@
    <title>Andrew Su's Portfolio Website</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="header&footer.css">
-   <link rel="stylesheet" href="class.css">
-  
+   <link rel="stylesheet" href="contact.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar">
@@ -16,15 +16,49 @@
         <li>More
             <ul class="dropdown-menu" class="active-nav">
                 <li><a href="bio.html">Bio</a></li>
-                <li><a href="class.html" class="active-nav">CS 330?</a></li>
+                <li><a href="contact.html" class="active-nav">Contact</a></li>
                 <li><a href="https://github.com/ZhuoranS" target="_blank">Github</a></li>
             </ul>
         </li>
     </ul>
     </nav>
 <main>
-   <h1>What is this for?</h1>
-   <h2>Answer: final project for COMP_SCI330: Human-Computer Interaction!</h2>
+   <h1>Please fill out the form below for contact.</h1>
+   <div class="contacts">
+      <div class="form-container">
+         <form name="contact-form"  onSubmit="validateForm(event);">
+         <div class="name-inputs">
+            <div class="half-container">
+               <label for="fname">First Name</label>
+               <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+            </div>
+            <div class="half-container">
+               <label for="lname">Last Name</label>
+               <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+         </div>
+
+         <label for="email">Email</label>
+         <input type="text" id="email" name="email" placeholder="abc@gmail.com">
+
+         <label for="purpose" name="Purpose">Purpose</label>
+            <select>
+            <option value="jobs">Available Opportunities</option>
+            <option value="inquiries">Inquiries</option>
+            <option value="general">General</option>
+         </select>
+      
+         <label for="subject">Subject</label>
+         <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+         
+         <input type="submit" value="Submit">
+
+         <input type="checkbox" id="copy-checkbox" name="copy-checkbox">
+         <label for="copy" name="copy">Send me a copy of this submission</label>
+         </form>
+      </div>
+      
+   </div>
   
 </main>
 <footer>
@@ -47,4 +81,5 @@
    </div>
 </footer>
 </body>
+<script src="contact.js"></script>
 </html>

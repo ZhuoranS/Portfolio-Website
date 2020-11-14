@@ -1,13 +1,26 @@
 
 /* Slideshow container */
+
+h1, h2{
+  text-align: center;
+  width:75%;
+  margin-left: 12.5%;
+  margin-left: 12.5%;
+}
+
+.self-id{
+  color:purple;
+  font-weight: bold;
+}
+
 .slide-container {
     max-width: 1200px;
-    height: 500px;
+    height: 525px;
     position: relative;
     margin: auto;
     border: solid 1px grey;
     border-radius: 25px;
-    
+    z-index: 0;
   }
   
   /* Hide the images by default */
@@ -18,8 +31,12 @@
   }
   
   .project-image{
-    width: 900px;
+    width: 75%;
     height: 450px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
   }
 
   /* Next & previous buttons */
@@ -63,6 +80,11 @@
     text-align: center;
   }
   
+
+  
+  a:hover + .hover-text{
+    display: block;
+  }
   /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
@@ -79,6 +101,26 @@
     background-color: #717171;
   }
   
+  .hover-text {
+    position: absolute;
+    top: 78.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 80%;
+    height:100px;
+    opacity: 0.9;
+    display: none;
+  }
+
+    
+  .hover-text p {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+
+
   /* Fading animation */
   .fade {
     -webkit-animation-name: fade;
@@ -95,4 +137,22 @@
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+  }
+
+
+  .fade-hover-text {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .1}
+    to {opacity: .9}
+  }
+  
+  @keyframes fade {
+    from {opacity: .1}
+    to {opacity: .9}
   }

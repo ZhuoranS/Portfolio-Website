@@ -5,7 +5,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="resume.css">
    <link rel="stylesheet" href="header&footer.css">
-  
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar">
@@ -16,7 +16,7 @@
         <li>More
             <ul class="dropdown-menu">
                 <li><a href="bio.html">Bio</a></li>
-                <li><a href="class.html">CS 330?</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="https://github.com/ZhuoranS" target="_blank">Github</a></li>
             </ul>
         </li>
@@ -30,9 +30,10 @@
       <div class="transcript-button" label="see-transcript"><a id="transcript-link" href="src\Transcript 2019 Fall.pdf" download="transcript" target="_blank">Transcript</a></div>
       <div class="transcript-selection">
          <span>Select Transcript Version</span>
-         <select onchange="changeTranscript()">
+         <select id="version" onchange="changeTranscript()">
             <option value="19FA">2019 Fall</option>
-            <option value="19WI">2019 Winter</option>
+            <option value="20WI">2020 Winter</option>
+            <option value="20SP">2020 Spring</option>
          </select>
       </div>
    </div>
@@ -59,4 +60,5 @@
    </div>
 </footer>
 </body>
+<script src="resume.js"></script>
 </html>
