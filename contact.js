@@ -1,5 +1,10 @@
+window.onload = (()=>{
+    var body = document.getElementsByTagName("main")[0];
+    body.className+= "load";
+});
+
+
 function validateForm(e) {
-    
     var fname = document.forms["contact-form"]["fname"].value;
     var lname = document.forms["contact-form"]["lname"].value;
     var email = document.forms["contact-form"]["email"].value;

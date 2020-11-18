@@ -2,13 +2,20 @@
    margin: 15px 15px 15px 0;
    border-radius: 15px;
    background-color: rgba(128, 0, 128, 0.068);
-   padding: 15px 35px 35px 35px;
+   padding: 15px 35px 45px 35px;
    
 }
 
 
+.project-info{
+   font-size:1.17em;
+}
+
 .project-list li{
    font-family: sans-serif;
+   font-size: 1.17em;
+   margin-top: 5px;
+   margin-bottom: 5px;
 }
 
 .project-link-wrapper{
@@ -17,15 +24,18 @@
 
 .project-link{
    text-decoration: none;
+   font-weight: bold;
    background-color: white;
    float: right;
    padding: 10px 50px 10px 50px;
    border-radius: 10px;
+   box-shadow: 1px;
 }
 
 .project-link:hover{
-   background-color: grey;
+   background-color: purple;
    color: white;
+   transition: background-color 1.5s ease;
 }
 
 .date {

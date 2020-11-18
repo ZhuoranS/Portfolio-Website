@@ -1,6 +1,11 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
+window.onload = (()=>{
+  var body = document.getElementsByTagName("main")[0];
+  body.className+= "load";
+});
+
 // Next/previous controls
 function plusSlide(n) {
   showSlides(slideIndex += n);
@@ -26,3 +31,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+

@@ -1,3 +1,4 @@
+
 .link{
     padding: 3px;
     color: black;
@@ -6,25 +7,33 @@
     background-color: purple;
     border-radius: 5px;
     color:white;
+    transition: background-color 0.75s ease;
 }
 
 #go-cats{
     color: purple;
 }
 
-
 #spotify{
-    width: 300px;
+    width: 500px;
     height: 75px;
 }
 
 #bio-contents{
     width: 60%;
     display: inline-block;
+    padding: 20px;
+    padding-bottom: 60px;
+    border: solid 2px black;
+    border-radius: 20px;
+    transition: opacity 1s ease;
 }
 
 #twitter{
     margin-left: 25px;
+    padding: 20px;
     display: inline-block;
     vertical-align: top;
+    border: solid 2px black;
+    border-radius: 20px;
 }
