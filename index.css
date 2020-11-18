@@ -85,7 +85,7 @@ h1, h2{
   .slide-text:hover{
     background-color: rgb(160, 5, 160);
     color: #bbb;
- 
+    transition: 0.5s ease;
   }
   a{
     text-decoration: none;
