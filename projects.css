@@ -30,13 +30,16 @@
    float: right;
    padding: 10px 50px 10px 50px;
    border-radius: 10px;
+   transition: color 1s ease;
    transition: background-color 1s ease;
+
 }
 
 .project-link:hover{
    background-color: purple;
    color: white;
    transition: background-color 1s ease;
+   transition: color 1s ease;
 }
 
 .date {
