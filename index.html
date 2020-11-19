@@ -15,46 +15,46 @@
 <body>
 <nav class="navbar">
    <ul>
-      <li><a href="index.html">Zhuoran(Andrew) Su</a></li>
-      <li><a href="projects.html">More Projects</a></li>
-      <li><a href="resume.html">Resume</a></li>
+      <li><a href="index.html" aria-label="Main Page">Zhuoran(Andrew) Su</a></li>
+      <li><a href="projects.html" aria-label="Projects Page">More Projects</a></li>
+      <li><a href="resume.html" aria-label="Resume Page">Resume</a></li>
       <li>More
          <ul class="dropdown-menu">
-            <li><a href="bio.html">Bio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://github.com/ZhuoranS" target="_blank">Github</a></li>
+            <li><a href="bio.html" aria-label="Bio Page">Bio</a></li>
+            <li><a href="contact.html" aria-label="Contact Page">Contact</a></li>
+            <li><a href="https://github.com/ZhuoranS" target="_blank" aria-label="Github">Github</a></li>
          </ul>
       </li>
    </ul>
 </nav>
 <main>
-   <h1>Welcome! I am Zhuoran Su (feel free to call me Andrew),</h1>
-   <h2>An avid <span class="self-id">programmer</span>, a <span class="self-id">life-long translator</span>, and a proud <span class="self-id">Wildcat</span>!</h2>
+   <h1 aria-label="Introduction">Welcome! I am Zhuoran Su (feel free to call me Andrew),</h1>
+   <h2 aria-label="More Introduction">An avid <span class="self-id">programmer</span>, a <span class="self-id">life-long translator</span>, and a proud <span class="self-id">Wildcat</span>!</h2>
    <div class="slide-container">
 
       <!-- Full-width images with number and caption text -->
-      <div class="slide">
-         <img class="project-image fade" src="src\cropped_delos.png">
-         <a href="projects.html"><div class="slide-text">DELOS: Model Serving in Deep Learnings</div></a>
-         <div class="hover-text fade-hover-text"><p>DELOS(Deep Learning Model Serving System) is an open-source system addressing deep learning needs for automating
+      <div class="slide" aria-label="Carousel Slide 1">
+         <img class="project-image fade" src="src\cropped_delos.png" alt="DELOS Project Illustration">
+         <a href="projects.html" aria-label="Project Link"><div class="slide-text">DELOS: Model Serving in Deep Learnings</div></a>
+         <div class="hover-text fade-hover-text" aria-label="Short Intro"><p>DELOS(Deep Learning Model Serving System) is an open-source system addressing deep learning needs for automating
             deployment, scaling, and management of containerized applications.</p></div>
       </div>
 
-      <div class="slide">
-         <img class="project-image fade" src="src\scope_cropped.png">
-         <a href="projects.html#scope"><div class="slide-text">ScopeNU Student Startup</div></a>
-         <div class="hover-text fade-hover-text"><p>Scope is a start-up at the Garage that aims to promote student engagement with the Evanston business community via
+      <div class="slide" aria-label="Carousel Slide 2">
+         <img class="project-image fade" src="src\scope_cropped.png" alt="ScopeNu Project Logo">
+         <a href="projects.html#scope" aria-label="Project Link"><div class="slide-text">ScopeNU Student Startup</div></a>
+         <div class="hover-text fade-hover-text" aria-label="Short Intro"><p>Scope is a start-up at the Garage that aims to promote student engagement with the Evanston business community via
             personalized platforms.</p></div>
       </div>
 
       <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlide(1)">&#10095;</a>
+      <button class="prev" onclick="plusSlide(-1)" aria-label="Prev">&#10094;</button>
+      <button class="next" onclick="plusSlide(1)" aria-label="Next">&#10095;</button>
    </div>
    <br>
    <div style="text-align:center">
-      <span class="dot" onclick="toSlide(1)"></span>
-      <span class="dot" onclick="toSlide(2)"></span>
+      <span class="dot" onclick="toSlide(1)" aria-label="Slide 1"></span>
+      <span class="dot" onclick="toSlide(2)" aria-label="Slide 2"></span>
    </div>
   
 </main>
