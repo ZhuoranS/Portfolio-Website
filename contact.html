@@ -30,16 +30,16 @@
          <div class="name-inputs">
             <div class="half-container">
                <label for="fname">First Name</label>
-               <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+               <input type="text" id="fname" name="firstname" placeholder="Your first name.." required aria-required="true">
             </div>
             <div class="half-container">
                <label for="lname">Last Name</label>
-               <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+               <input type="text" id="lname" name="lastname" placeholder="Your last name.." required aria-required="true">
             </div>
          </div>
 
          <label for="email">Email</label>
-         <input type="text" id="email" name="email" placeholder="abc@gmail.com">
+         <input type="email" id="email" name="email" placeholder="abc@gmail.com" required aria-required="true">
 
          <label for="purpose" name="Purpose">Purpose</label>
             <select>
@@ -48,8 +48,8 @@
             <option value="general">General</option>
          </select>
       
-         <label for="subject">Subject</label>
-         <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+         <label for="subject" required aria-required="true">Subject</label>
+         <textarea id="subject" name="subject" placeholder="Write something.." required aria-required="true"></textarea>
          
          <input type="submit" value="Submit">
 

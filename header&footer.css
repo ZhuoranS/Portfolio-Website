@@ -58,9 +58,12 @@ h1, h2, h3, h4, a, p, span, content, label{
    border-radius: 10px;
    transition: border 0.5s ease;
    border: solid 2px purple;
-   
+   overflow: hidden;
+   background-position: center;
  }
+
  
+
  nav a.active-nav{
    background-color: rgb(197, 1, 197);
  }
@@ -68,6 +71,7 @@ h1, h2, h3, h4, a, p, span, content, label{
  nav.navbar li a:hover{
    border: solid 2px white;
    transition: border 0.5s ease;
+
  }
 
  nav.navbar a:active{
