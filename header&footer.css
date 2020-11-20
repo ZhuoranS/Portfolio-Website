@@ -23,7 +23,7 @@ h1, h2, h3, h4, a, p, span, content, label{
     margin-bottom: 4em;
     overflow: auto;
     opacity: 0;
-    transition: opacity 1s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+    transition: opacity 0.75s cubic-bezier(0.55, 0.06, 0.68, 0.19);
  }
 
  main.load{
