@@ -14,18 +14,39 @@
     background-color:  purple;
     text-align: center;
     float: left;
+    display: inline;
     border: solid 2px purple;
+
     transition: border 1s ease;
 }
 
-.transcript-button:hover {
+
+.resume-button {
+    width: 300px;
+    padding: 12px;
+    height: 44px;
+    margin-top: 3px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color:  purple;
+    text-align: center;
+    font-size: 16px;
+    float: left;
+    border: solid 2px purple;
+    transition: border 1s ease;
+    display: inline;
+    font-family: Roboto;
+    color: white;
+}
+
+.transcript-button:hover, .resume-button:hover {
     border: solid 2px white;
     box-shadow: 0 0 0 0;
     transition: border 1s ease;
 
 }
 
-#transcript-link{
+#transcript-link, #resume-link{
     text-decoration: none;
     color: white;
 }
@@ -33,8 +54,52 @@
 .resume-frame{
     width:100%;
     height:550px;
-    border-radius: 10px;
+    display: none;
+
 }
+
+.text-resume{
+    height: 510px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+    overflow: scroll;
+}
+
+#name-header{
+    text-align: center; 
+}
+
+.info-header{
+   text-align: center; 
+}
+
+#school, #degree, .exp-name, .exp-time{
+    display: inline;
+}
+
+.exp-time{
+    float: right;
+    margin: 0;
+}
+
+.exp-position{
+    display: inline;
+    font-style: italic;
+}
+
+#school-location, #graduation-date{
+    display: inline;
+    float:right;
+    font-weight: normal;
+    margin: 0;
+}
+
+#coursework, #programming-languages, #libraries, #awards, #activities, #languages{
+    font-weight: normal;
+}
+
 
 .transcript-selection{
     float:left;
