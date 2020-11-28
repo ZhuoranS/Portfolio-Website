@@ -38,6 +38,8 @@
     display: inline;
     font-family: Roboto;
     color: white;
+    user-select: none;
+    outline: none;
 }
 
 .transcript-button:hover, .resume-button:hover {
