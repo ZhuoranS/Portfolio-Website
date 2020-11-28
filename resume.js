@@ -95,7 +95,7 @@ var skillData = [
         content: "Award for Excellence in Mathematics By a First Year, issued by Northwestern Mathematics Department, Honorable Mention in Unicode SC+ Hackathon (8 in 83 teams)"
     }, {
         title: "Activities",
-        content: "&ldquo; Metchup &rdquo; WebApp Project, Social Media managements(4 accounts, up to 3000 subscribers), NESP(Northwestern Emerging Scholars Program)"
+        content: "&ldquo;Metchup&rdquo; WebApp Project, Social Media managements(4 accounts, up to 3000 subscribers), NESP(Northwestern Emerging Scholars Program)"
     }, {
         title: "Languages",
         content: "Fluent in English and Chinese, beginner in Japanese"
