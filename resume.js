@@ -48,7 +48,7 @@ var expdata=[
 {
     position: "Peer Mentor",
     project:"Northwestern Computer Science Department", 
-    time:"Sept.2020—Present",
+    time:"Sept.2020-Present",
     description:"",
     contribs: [
         "Selected to be the mentor for COMP_SCI 214: Data Structures & Algorithm;",
@@ -59,7 +59,7 @@ var expdata=[
 {
     position: "Developer",
     project:"Scope Northwestern", 
-    time:"Nov. 2019—Present",
+    time:"Nov. 2019-Present",
     description:"Scope is a start-up at the Garage that aims to promote student engagement with the Evanston business community via personalized platforms. My roles in the team are:",
     contribs: [
         "Participating in daily operations;",
