@@ -41,3 +41,58 @@
     height: 610px;
     margin-bottom: 50px;
 }
+
+#map-container{
+    height: 610px;
+    display:none;
+}
+
+#map{
+    height:610px;
+}
+
+#mapbutton{
+    display: inline;
+    border: 0px white;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    text-decoration: underline;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+    user-select: none;
+    outline: 0;
+}
+
+#mapbutton:hover{
+    background-color: purple;
+    color:white;
+    transition: background-color 0.5s ease;
+}
+
+h1{
+    font-family: Roboto;
+}
+
+h2{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: large;
+}
+
+
+#hidemap{
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: purple;
+    color: white;
+    box-shadow: none;
+    outline: none;
+    user-select: none;
+    font-weight: bold;
+    margin: 25px;
+    margin-left: 45%;
+}
