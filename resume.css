@@ -118,6 +118,15 @@
     font-style: italic;
 }
 
+.exp-desc{
+    margin-top: 16px;
+    font-family: Roboto;
+}
+
+.exp-contribs{
+    margin-bottom: 32px;
+}
+
 #school-location, #graduation-date{
     display: inline;
     float:right;
@@ -125,7 +134,7 @@
     margin: 0;
 }
 
-#coursework, #programming-languages, #libraries, #awards, #activities, #languages{
+.skill-content, #coursework{
     font-weight: normal;
 }
 

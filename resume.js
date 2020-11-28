@@ -32,13 +32,13 @@ function alternateResume(){
 var expdata=[
 {
     position: "Intern",
-    project:" DELOS System at NU’s Center for Deep Learning", 
+    project: "DELOS System at NU&#39s Center for Deep Learning", 
     time:"Mar.2020-Sept.2020",
     description:"DELOS(Deep Learning Model Serving System) is an open-source system addressing deep learning needs for automating deployment, scaling, and management of containerized applications. My contributions included:",
     contribs: [
-        "Working on full-stack development of the system under Professor Diego Klabjan’s guidance;",
+        "Working on full-stack development of the system under Professor Diego Klabjan&#39 s guidance;",
         "Designing front-end structure and developing the website with Python Flask, JQuery, Bootstrap.js, and AJAX;",
-        "Integrating fellow researcher’s deep learning back-end API with the website for deep learning model demonstration;",
+        "Integrating fellow researcher&#39s deep learning back-end API with the website for deep learning model demonstration;",
         "Developing the benchmark pipeline with Deep Learning Multi-layer Perceptron model by Tensorflow and Keras;",
         "Rewriting research paper codes to Tensorflow v2;",
         "Demonstrating the project in monthly meetings to sponsors including Google Cloud, Nvidia, AllState, Abbvie, etc."
@@ -71,7 +71,7 @@ var expdata=[
 
 {
     position: "Python Engineering Intern",
-    project:"Xinhua Bookstore’s Technical Department", 
+    project:"Xinhua Bookstore&#39s Technical Department", 
     time:"August. 2019",
     description:"",
     contribs: [
@@ -81,6 +81,26 @@ var expdata=[
 }
 
 ]
+
+
+var skillData = [
+    {
+        title: "Programming Language",
+        content: "Python, Javascript, C++, HTML, CSS, C, Java"
+    }, {
+        title: "Libraries",
+        content: "React.js, Flask, Bootstrap, jquery, nltk, jieba, D3.js, echarts.js, Tensorflow & Keras, Pandas"
+    }, {
+        title: "Awards",
+        content: "Award for Excellence in Mathematics By a First Year, issued by Northwestern Mathematics Department, Honorable Mention in Unicode SC+ Hackathon (8 in 83 teams)"
+    }, {
+        title: "Activities",
+        content: "&ldquo; Metchup &rdquo; WebApp Project, Social Media managements(4 accounts, up to 3000 subscribers), NESP(Northwestern Emerging Scholars Program)"
+    }, {
+        title: "Languages",
+        content: "Fluent in English and Chinese, beginner in Japanese"
+    }];
+
 
 function loadExperiences(data){
     let num = 0;
@@ -94,8 +114,8 @@ function loadExperiences(data){
             let html = 
               `
                 <div class="exp-header"><h4 class="exp-position">${exp.position}</h4><h4 class="exp-name">, ${exp.project}</h4> <h4 class="exp-time">${exp.time}</h4></div>
-                <span>${exp.description}</span>
-                <ul id=${"exp-contribs"+num}>
+                <div class="exp-desc">${exp.description}</div>
+                <ul class="exp-contribs" id=${"exp-contribs"+num}>
                 </ul>
               ` 
             let container = document.createElement("div");
@@ -115,4 +135,22 @@ function loadExperiences(data){
     }
 }
 
+
+function loadSkills(data){
+    skills = document.querySelector("#skills");
+    if(data instanceof Array){
+        for(let skill of data){
+            let html =
+            `
+            ${skill.title}: <span class="skill-content">${skill.content}</span>
+            `
+            let container = document.createElement("h4");
+            container.id = skill.title;
+            container.innerHTML = html;
+            skills.append(container);
+        }
+    }
+}
+
 loadExperiences(expdata);
+loadSkills(skillData);
