@@ -86,7 +86,7 @@ h2{
     align-items: center;
     padding: 10px;
     border-radius: 10px;
-    border-width: 0;
+    border: solid 2px purple;
     background-color: purple;
     color: white;
     box-shadow: none;
@@ -95,4 +95,14 @@ h2{
     font-weight: bold;
     margin: 25px;
     margin-left: 45%;
+}
+
+
+#hidemap:hover{
+    border: solid 2px purple;
+    background-color: white;
+    color: purple;
+    transition: border 1s fade;
+    transition: background-color 1s fade;
+    transition: color 1s fade;
 }
