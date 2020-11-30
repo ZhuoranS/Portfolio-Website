@@ -62,7 +62,6 @@
     padding-right: 3px;
     border-radius: 5px;
     user-select: none;
-    outline: 0;
 }
 
 #mapbutton:hover{
@@ -90,7 +89,6 @@ h2{
     background-color: purple;
     color: white;
     box-shadow: none;
-    outline: none;
     user-select: none;
     font-weight: bold;
     margin: 25px;

@@ -16,12 +16,29 @@ function toSlide(n) {
   showSlides(slideIndex = n);
 }
 
+// Kets control
+function right(e){
+  if(e.keyCode === 39){
+    plusSlide(1);
+  }
+}
+
+function left(e){
+  if(e.keyCode === 37){
+    plusSlide(1);
+  }
+}
+
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("slide");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }

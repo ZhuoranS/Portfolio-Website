@@ -15,36 +15,38 @@
 <body>
 <nav class="navbar">
    <ul>
-      <li><a href="index.html" aria-label="Main Page" class="active-nav">Zhuoran(Andrew) Su</a></li>
-      <li><a href="projects.html" aria-label="Projects Page">More Projects</a></li>
-      <li><a href="resume.html" aria-label="Resume Page">Resume</a></li>
-      <li><a href="bio.html" aria-label="Bio Page" >Bio</a></li>
-      <li><a href="contact.html" aria-label="Contact Page">Contact</a></li> 
+      <li><a tabindex="0" href="index.html" aria-label="Main Page" class="active-nav">Zhuoran(Andrew) Su</a></li>
+      <li><a tabindex="0" href="projects.html" aria-label="Projects Page">More Projects</a></li>
+      <li><a tabindex="0" href="resume.html" aria-label="Resume Page">Resume</a></li>
+      <li><a tabindex="0" href="bio.html" aria-label="Bio Page" >Bio</a></li>
+      <li><a tabindex="0" href="contact.html" aria-label="Contact Page">Contact</a></li> 
    </ul>
 </nav>
 <main>
    <h1 aria-label="Introduction">Welcome! I am Zhuoran Su (feel free to call me Andrew),</h1>
    <h2 aria-label="More Introduction">An avid <span class="self-id">programmer</span>, a <span class="self-id">life-long translator</span>, and a proud <span class="self-id">Wildcat</span>!</h2>
+   
+   <!-- Slideshow container created and based on source: https://www.w3schools.com/howto/howto_js_slideshow.asp 
+            Added tabindex and onekeydown to follow the WCAG-->
    <div class="slide-container">
 
-      <!-- Full-width images with number and caption text -->
       <div class="slide" aria-label="Carousel Slide 1">
          <img class="project-image fade" src="src\cropped_delos.png" alt="DELOS Project Illustration">
-         <a class="project-link" href="projects.html" aria-label="Project Link"><div class="slide-text">DELOS: Model Serving in Deep Learnings</div></a>
+         <a tabindex="0" class="project-link" href="projects.html" aria-label="Project Link"><div class="slide-text">DELOS: Model Serving in Deep Learnings</div></a>
          <div class="hover-text fade-hover-text" aria-label="Short Intro"><p>DELOS(Deep Learning Model Serving System) is an open-source system addressing deep learning needs for automating
             deployment, scaling, and management of containerized applications.</p></div>
       </div>
 
       <div class="slide" aria-label="Carousel Slide 2">
          <img class="project-image fade" src="src\scope_cropped.png" alt="ScopeNu Project Logo">
-         <a class="project-link" href="projects.html#scope" aria-label="Project Link"><div class="slide-text">ScopeNU Student Startup</div></a>
+         <a tabindex="0" class="project-link" href="projects.html#scope" aria-label="Project Link"><div class="slide-text">ScopeNU Student Startup</div></a>
          <div class="hover-text fade-hover-text" aria-label="Short Intro"><p>Scope is a start-up at the Garage that aims to promote student engagement with the Evanston business community via
             personalized platforms.</p></div>
       </div>
 
       <!-- Next and previous buttons -->
-      <button class="prev" onclick="plusSlide(-1)" aria-label="Prev">&#10094;</button>
-      <button class="next" onclick="plusSlide(1)" aria-label="Next">&#10095;</button>
+      <button tabindex="0" class="prev" onkeydown="left(event)" onclick="plusSlide(-1)" aria-label="Prev">&#10094;</button>
+      <button tabindex="0" class="next" onkeydown="right(event)" onclick="plusSlide(1)" aria-label="Next">&#10095;</button>
    </div>
    <br>
    <div style="text-align:center">
@@ -57,17 +59,17 @@
    <div class="footer1">
       <ul>
          <li>
-            <a class="social-media" href="https://www.linkedin.com/in/zrsu/"  target="_blank" aria-label="LinkedIn Link">
+            <a tabindex="0" class="social-media" href="https://www.linkedin.com/in/zrsu/"  target="_blank" aria-label="LinkedIn Link">
                <img alt="LinkedIn" src="https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_100,h_100,al_c,q_85,usm_0.66_1.00_0.01/7528824071724d12a3e6c31eee0b40d4.webp" style="width: 35px; height: 35px;">
             </a>
          </li>
          <li>
-            <a class="social-media" href="https://www.instagram.com/zr_su0403/"  target="_blank" aria-label="Instagram Link">
+            <a tabindex="0" class="social-media" href="https://www.instagram.com/zr_su0403/"  target="_blank" aria-label="Instagram Link">
                <img id="Instagram" alt="Instagram" src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_100,h_100,al_c,q_85,usm_0.66_1.00_0.01/81af6121f84c41a5b4391d7d37fce12a.webp" style="height: 35px; width: 35px;">
             </a>
          </li>
          <li>
-            <a class="social-media" href="https://github.com/ZhuoranS"  target="_blank" aria-label="Github Link">
+            <a tabindex="0" class="social-media" href="https://github.com/ZhuoranS"  target="_blank" aria-label="Github Link">
                <img id="Github" alt="Github" src="src/github-logo.webp" style="height: 25px; width: 25px;">
             </a>
          </li>
