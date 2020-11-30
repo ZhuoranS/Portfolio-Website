@@ -11,6 +11,31 @@
    font-size:1.17em;
 }
 
+.project-desc{
+   
+}
+
+.project-img{
+   display: inline-block;
+   max-width:60%;
+   max-height: 250px;
+   width: auto;
+   height: auto;
+   border-radius: 20px;
+   border: solid 1px grey;
+}
+
+
+.list-container{
+   display: inline-block;
+   max-width:70%;
+   vertical-align: top;
+}
+
+.project-list{
+   margin-top: 0;
+}
+
 .project-list li{
    font-family: sans-serif;
    font-size: 1.17em;
@@ -27,12 +52,11 @@
    font-weight: bold;
    background-color: white;
    color: purple;
-   float: right;
+   margin-left: 80%;
    padding: 10px 50px 10px 50px;
    border-radius: 10px;
    transition: color 1s ease;
    transition: background-color 1s ease;
-
 }
 
 .project-link:hover{
