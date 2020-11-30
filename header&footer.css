@@ -155,12 +155,12 @@ footer .footer2{
    width: 35px;
    display: inline-block;
    vertical-align: top;
-   border: solid 1px black; 
+   border: solid 2px black; 
    border-radius: 5px;
 }
 
 .social-media:hover{
-   border: solid 1px white; 
+   border: solid 2px white; 
 }
 
 
