@@ -89,8 +89,8 @@ nav.navbar a:active{
    background-color:purple;
    border: 1px white;
    border-radius: 4px;
-   top: 25px;
-   left: 5px;
+   top: 28px;
+   left: -5px;
    width: 170px;
    z-index: 1;
 }
@@ -152,5 +152,20 @@ footer .footer2{
 }
 
 .social-media{
+   height: 35px;
+   width: 35px;
    display: inline-block;
+   vertical-align: top;
+   border: solid 1px black; 
+   border-radius: 5px;
+}
+
+.social-media:hover{
+   border: solid 1px white; 
+}
+
+
+#Github{
+   margin-top: 5px;
+   margin-left: 5px;
 }
