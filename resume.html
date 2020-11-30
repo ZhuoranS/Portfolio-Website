@@ -37,7 +37,7 @@
          Algorithm; Human-Computer Interaction; Intro to Systems; Math Foundations of Comp. Sci.; MENU Linear Algebra &
          Multivariable Calculus</span></h4>
       
-         <hr>
+      <hr>
 
       <h3>Technical Experience</h3>
       <section id="exp-list" aria-label="Experiences"></section>
@@ -50,16 +50,16 @@
 
    </div>
    <div class="transcript-bar">
-      <button class="resume-button" label="see-resume" onClick="alternateResume()">Toggle Resume Display</button> 
-      <a id="transcript-link" href="src\Transcript 2019 Fall.pdf" download="transcript" target="_blank">
-         <div class="transcript-button" label="see-transcript">Transcript</div> 
+      <button class="resume-button" aria-label="see-resume" onClick="alternateResume()">Toggle Resume Display</button> 
+      <a id="transcript-link" aria-label="transcript link" href="src\Transcript 2019 Fall.pdf" download="transcript" target="_blank">
+         <div class="transcript-button" aria-label="see-transcript">Transcript</div> 
       </a>
       <div class="transcript-selection">
          <span>Select Transcript Version</span>
-         <select id="version" onchange="changeTranscript()">
-            <option value="19FA">2019 Fall</option>
-            <option value="20WI">2020 Winter</option>
-            <option value="20SP">2020 Spring</option>
+         <select id="version" onchange="changeTranscript()" aria-label="Transcript version select">
+            <option value="19FA" aria-labelledby="2019 Fall">2019 Fall</option>
+            <option value="20WI" aria-labelledby="2020 Winter">2020 Winter</option>
+            <option value="20SP" aria-labelledby="2020 Spring">2020 Spring</option>
          </select>
       </div>
    </div>

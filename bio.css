@@ -98,7 +98,7 @@ h2{
 }
 
 
-#hidemap:hover{
+#hidemap:hover, #hidemap:focus{
     border: solid 2px purple;
     background-color: white;
     color: purple;
