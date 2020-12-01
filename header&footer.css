@@ -164,7 +164,15 @@ footer .footer2{
 }
 
 
+#Instagram, #Linkedin{
+   height: 35px;
+   width: 35px;
+}
+
 #Github{
    margin-top: 5px;
    margin-left: 5px;
+   height: 25px;
+   width: 25px;
 }
+
