@@ -17,13 +17,14 @@
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #4CAF50;
+    background-color: purple;
     color: white;
     font-weight: bold;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    border: solid 2px purple;
   }
 
   input[type=checkbox] {
@@ -32,7 +33,15 @@
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: white;
+    color: purple;
+    border: solid 2px purple;
+  }
+  
+  input[type=submit]:active {
+    background-color: white;
+    color: purple;
+    border: solid 2px purple;
   }
   
 
