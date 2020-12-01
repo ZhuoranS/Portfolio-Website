@@ -13,13 +13,17 @@
 
 
 .project-img{
-   
-   max-width:60%;
+   max-width:40%;
    max-height: 250px;
    width: auto;
    height: auto;
    border-radius: 20px;
    border: solid 1px grey;
+}
+
+.img-link{
+   list-style-type: none;
+   text-decoration: none;
 }
 
 .img-link:hover + .project-img{
@@ -28,7 +32,7 @@
 
 .list-container{
    display: inline-block;
-   max-width:70%;
+   max-width: 55%;
    vertical-align: top;
 }
 
