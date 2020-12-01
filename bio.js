@@ -76,7 +76,7 @@ function hideMap(){
     let container = document.getElementsByClassName("container")[0];
     let map = document.getElementById("map-container");
     let title = document.getElementsByTagName("h1")[0];
-    title.innerHTML="Comlete Bio";
+    title.innerHTML="Complete Bio";
     map.setAttribute("style", "display: none");
     container.setAttribute("style", "display: block");
 }
