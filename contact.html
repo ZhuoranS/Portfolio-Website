@@ -22,20 +22,20 @@
    <h1>Please fill out the form below for contact.</h1>
    <div class="contacts">
       <div class="form-container">
-         <form name="contact-form"  onSubmit="validateForm(event);">
+         <form name="contact-form" aria-label="contact form" onSubmit="validateForm(event);">
          <div class="name-inputs">
             <div class="half-container">
                <label for="firstname">First Name</label>
-               <input type="text" id="fname" name="firstname" placeholder="Your first name.." required aria-required="true">
+               <input aria-labelledby="first name input" type="text" id="fname" name="firstname" placeholder="Your first name.." required aria-required="true">
             </div>
             <div class="half-container">
                <label for="lastname">Last Name</label>
-               <input type="text" id="lname" name="lastname" placeholder="Your last name.." required aria-required="true">
+               <input aria-labelledby="last name input" type="text" id="lname" name="lastname" placeholder="Your last name.." required aria-required="true">
             </div>
          </div>
 
          <label for="email">Email</label>
-         <input type="email" id="email" name="email" placeholder="abc@gmail.com" required aria-required="true">
+         <input aria-labelledby="email input" type="email" id="email" name="email" placeholder="abc@gmail.com" required aria-required="true">
 
          <label for="purpose" name="Purpose" aria-labelledby="Select purpose">Purpose</label>
             <select>
@@ -45,13 +45,13 @@
          </select>
       
          <label for="subject">Subject</label>
-         <textarea id="subject" name="subject" placeholder="Write something.." required aria-required="true"></textarea>
+         <textarea aria-labelledby="subject" id="subject" name="subject" placeholder="Write something.." required aria-required="true"></textarea>
          
          <!--Backend not implemented-->
          <label for="submit"></label>
-         <input type="submit" value="Submit">
+         <input aria-labelledby="submit button" type="submit" value="Submit">
 
-         <input type="checkbox" id="copy-checkbox" name="copy-checkbox">
+         <input aria-labelledby="send copy checkbox" type="checkbox" id="copy-checkbox" name="copy-checkbox">
          <label for="copy" name="copy">Send me a copy of this submission</label>
          </form>
       </div>
