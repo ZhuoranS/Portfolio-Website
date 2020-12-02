@@ -82,6 +82,7 @@ h1, h2{
     padding: 8px 12px;
     background-color: purple;
     font-weight: bold;
+    text-decoration: underline;
     border-radius: 10px;
     max-width: 75%;
     margin-left:11.5%;
@@ -89,6 +90,7 @@ h1, h2{
     transition: 0.5s ease;
     box-shadow: 3px 3px 7px grey;
     border: solid 2px purple
+    
   }
   
   .slide-text:hover{
